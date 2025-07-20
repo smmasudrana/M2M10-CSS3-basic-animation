@@ -44,3 +44,16 @@ h1{
     /* transform: translateX(40px);
     transform: translateY(50px); */
 }
+
+/* transition section */
+.inner2{
+    background-color: rgb(76, 226, 43);
+    border: 1px solid rgb(185, 8, 209);
+    width: 200px;
+    height: 200px;
+    transition: width 3s  2s, background-color 3s 2s;
+}
+.inner2:hover{
+    width: 500px;
+    background-color: rgb(255, 0, 0);
+}
