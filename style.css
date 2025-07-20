@@ -1,20 +1,22 @@
-body{
+body {
     width: 1140px;
     margin: 50px auto;
 }
-h1{
+
+h1 {
     font-size: 50px;
     text-align: center;
 }
 
 /* overflow section */
-.ellimplesis{
+.ellimplesis {
     width: 500px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.flowbox{
+
+.flowbox {
     height: 300px;
     padding: 20px;
     border: 3px solid salmon;
@@ -26,34 +28,65 @@ h1{
 }
 
 /* transform section */
-.container1{
+.container1 {
     width: 200px;
     height: 200px;
     background-color: aquamarine;
     border: 1px solid darkblue;
 }
-.inner{
+
+.inner {
     background-color: blueviolet;
     border: 1px solid darkgreen;
     width: 200px;
     height: 200px;
     /* transform: scale(0.25, 0.50); */
 }
-.inner:hover{
+
+.inner:hover {
     transform: rotate(45deg) scale(0.50, 0.60);
     /* transform: translateX(40px);
     transform: translateY(50px); */
 }
 
 /* transition section */
-.inner2{
+.inner2 {
     background-color: rgb(76, 226, 43);
     border: 1px solid rgb(185, 8, 209);
     width: 200px;
     height: 200px;
-    transition: width 3s  2s, background-color 3s 2s;
+    transition: width 3s 2s, background-color 3s 2s;
 }
-.inner2:hover{
+
+.inner2:hover {
     width: 500px;
     background-color: rgb(255, 0, 0);
+}
+
+/* animation section */
+@keyframes tung-tang {
+    form {
+        left: 0;
+    }
+
+    to {
+        left: 500px;
+        background-color: green;
+    }
+}
+
+.stage {
+    width: 600px;
+    height: 400px;
+    border: 2px solid darkorange;
+    background-color: aqua;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    animation: tung-tang 2s ease-in 1s infinite alternate;
 }
