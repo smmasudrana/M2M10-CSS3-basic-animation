@@ -2,11 +2,18 @@ body {
     width: 1140px;
     margin: 50px auto;
 }
+:root{
+    --primary-color:green;
+    --font-size: 50px;
+    --text-align:center;
+}
 
 h1 {
-    font-size: 50px;
-    text-align: center;
+    color: var(--primary-color);
+    font-size: var(--font-size);
+    text-align: var(--text-align);
 }
+
 
 /* overflow section */
 .ellimplesis {
