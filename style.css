@@ -1,0 +1,46 @@
+body{
+    width: 1140px;
+    margin: 50px auto;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+/* overflow section */
+.ellimplesis{
+    width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.flowbox{
+    height: 300px;
+    padding: 20px;
+    border: 3px solid salmon;
+    margin-bottom: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+/* transform section */
+.container1{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 1px solid darkblue;
+}
+.inner{
+    background-color: blueviolet;
+    border: 1px solid darkgreen;
+    width: 200px;
+    height: 200px;
+    /* transform: scale(0.25, 0.50); */
+}
+.inner:hover{
+    transform: rotate(45deg) scale(0.50, 0.60);
+    /* transform: translateX(40px);
+    transform: translateY(50px); */
+}
